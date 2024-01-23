@@ -4,60 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justice League</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Marcellus&family=Mulish:wght@400;600;700;800&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body></body>
 </html>
 <header class="header">
-  <a class="header-logo" href="./index.html"><span></span>box</a>
-  <nav class="header-nav">
-    <ul class="header-nav-list">
-      <li class="header-list-item">
-        <a class="header-list-link" href="./index.html">Home </a>
+  <div class="flex-container">
+    <a class="header-logo" href="./index.html"
+      ><span class="m-logo">M</span> box</a
+    >
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-list-item">
+          <a class="header-list-link current" href="./index.html">Home </a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-link" href="">TV Series</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-link" href="">Movies</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-link" href="">Series</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="menu-icons">
+      <li class="header-icon-item">
+        <button type="button" class="svg-button">
+          <svg class="icon-nav" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-search"></use>
+          </svg>
+        </button>
       </li>
-      <li class="header-list-item">
-        <a class="header-list-link" href="">TV Series</a>
+      <li class="header-icon-item">
+        <button type="button" class="svg-button">
+          <svg class="icon-nav" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-notification"></use>
+          </svg>
+        </button>
       </li>
-      <li class="header-list-item">
-        <a class="header-list-link" href="">Movies</a>
-      </li>
-      <li class="header-list-item">
-        <a class="header-list-link" href="">Series</a>
+      <li class="header-icon-item">
+        <button type="button" class="svg-button">
+          <svg class="icon-nav" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-account"></use>
+          </svg>
+        </button>
       </li>
     </ul>
-  </nav>
-  <ul class="">
-    <li class="header-icon-item">
-      <p></p>
-    </li>
-    <li class="header-icon-item">
-      <p></p>
-    </li>
-    <li class="header-icon-item">
-      <p></p>
-    </li>
-  </ul>
+  </div>
 </header>
 <main></main>
 <section class="hero">
-  class="hero-list-"
-  <h1 class="hero-title">Zack Snyder's Justice League</h1>
-  <ul class="hero-list">
-    <li class="hero-list-item">2021</li>
-    <li class="hero-list-item">18+</li>
-    <li class="hero-list-item">4h 2min</li>
-    <li class="hero-list-item">&#x2605;8.8</li>
-  </ul>
-  <p class="hero-text"></p>
-  <ul class="hero-button-list">
-    <li class="hero-button-item">
-      <button type="button" class="hero-button">&#10148; Watch</button>
-    </li>
-    <li class="hero-buttom-item">
-      <button type="button" class="hero-button-bg">More information</button>
-    </li>
-  </ul>
+  <div class="background-image">
+    <div class="container">
+      <div class="text">
+        <h1 class="hero-title">Zack Snyder's Justice League</h1>
+        <ul class="hero-list">
+          <li class="hero-list-item">2021</li>
+          <li class="hero-list-item oval">18+</li>
+          <li class="hero-list-item">4h 2min</li>
+          <li class="hero-list-item"><span class="star">&#x2605;</span>8.8</li>
+        </ul>
+        <p class="hero-text">
+          Determined to ensure Superman's ultimate sacrifice was not in vain,
+          Bruce Wayne aligns forces with Diana Prince with plans to recruit a
+          team of metahumans to protect the world from an approaching threat of
+          catastrophic proportions.
+        </p>
+        <ul class="hero-button-list">
+          <li class="hero-button-item">
+            <button type="button" class="hero-button">
+              <svg class="play" width="12" height="16">
+                <use href="./images/symbol-defs.svg#icon-play"></use>
+              </svg>
+              Watch
+            </button>
+          </li>
+          <li class="hero-button-item">
+            <button type="button" class="hero-button-bg">
+              More information
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
-<section class="TvShow">
+<section class="tvShow">
   <h2 class="TvShow-title">Trending TV Shows </h2>
   <ul class="TvShow-list">
     <li class="Tv-Show-lidt-item">
