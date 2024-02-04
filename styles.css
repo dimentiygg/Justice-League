@@ -267,3 +267,111 @@ img {
 .tvShow {
   padding-top: 71px;
 }
+
+.TvShow-title {
+  margin-bottom: 40px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 71%;
+  color: #fff;
+  position: relative;
+}
+
+.TvShow-title::before {
+  position: absolute;
+  border-radius: 50px;
+  width: 35px;
+  height: 8px;
+  content: '';
+  left: -35px;
+  top: 5px;
+  background: linear-gradient(172deg, #26fff2 0%, #326cff 100%);
+  transform: rotate(90deg);
+}
+
+.TvShow-list {
+  display: flex;
+  gap: 41px;
+  justify-content: center;
+  padding-bottom: 68px;
+}
+
+.Tv-Show-lidt-item img {
+  border-radius: 20px;
+  transition: box-shadow 0.2s ease;
+}
+
+.Tv-Show-lidt-item img:hover,
+.Tv-Show-lidt-item img:focus {
+  box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
+}
+
+.movies-title {
+  margin-bottom: 40px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 71%;
+  color: #fff;
+  position: relative;
+}
+
+.movies-title::before {
+  position: absolute;
+  border-radius: 50px;
+  width: 35px;
+  height: 8px;
+  content: '';
+  left: -35px;
+  top: 5px;
+  background: linear-gradient(172deg, #26fff2 0%, #326cff 100%);
+  transform: rotate(90deg);
+}
+
+.movies-list {
+  display: flex;
+  gap: 41px;
+  margin-bottom: 55px;
+}
+
+.movies-list li img {
+  border-radius: 20px;
+  transition: box-shadow 0.2s ease;
+}
+
+.movies-list li img:hover,
+.movies-list li img:focus {
+  box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
+}
+
+.play {
+  position: relative;
+  top: 2px;
+  left: -5px;
+}
+.movies-button {
+  width: 141px;
+  height: 50px;
+  border-radius: 50px;
+  border: transparent;
+  background: var(
+    --Brand-grd,
+    linear-gradient(317deg, #26fff2 13.2%, #326cff 71.54%)
+  );
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.movies-button:hover,
+.movies-button:focus {
+  transform: scale(1.1);
+}
+
+.trendingMovies {
+  padding-bottom: 100px;
+}
