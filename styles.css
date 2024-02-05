@@ -96,7 +96,7 @@ img {
 .header-list-link {
   color: #c2c2c2;
   text-align: center;
-  font-family: Mulish;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.25;
@@ -270,7 +270,7 @@ img {
 
 .TvShow-title {
   margin-bottom: 40px;
-  font-family: var(--font-family);
+  font-family: 'Mulish', sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 71%;
@@ -309,7 +309,7 @@ img {
 
 .movies-title {
   margin-bottom: 40px;
-  font-family: var(--font-family);
+  font-family: 'Mulish', sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 71%;
@@ -374,4 +374,106 @@ img {
 
 .trendingMovies {
   padding-bottom: 100px;
+}
+
+.genres-title {
+  margin-bottom: 40px;
+}
+
+.genres-list {
+  width: 1441px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+  justify-content: center;
+}
+
+.genres-title {
+  margin-bottom: 40px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 71%;
+  color: #fff;
+  position: relative;
+}
+
+.genres-title::before {
+  position: absolute;
+  border-radius: 50px;
+  width: 35px;
+  height: 8px;
+  content: '';
+  left: -35px;
+  top: 5px;
+  background: linear-gradient(172deg, #26fff2 0%, #326cff 100%);
+  transform: rotate(90deg);
+}
+
+.genres-list li img {
+  border-radius: 20px;
+  transition: box-shadow 0.2s ease;
+}
+
+.genres-list li img:hover,
+.genres-list li img:focus {
+  box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
+}
+
+.popular-genres {
+  padding-bottom: 70px;
+}
+
+.actors-title {
+  margin-bottom: 40px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 71%;
+  color: #fff;
+  position: relative;
+}
+
+.actors-title::before {
+  position: absolute;
+  border-radius: 50px;
+  width: 35px;
+  height: 8px;
+  content: '';
+  left: -35px;
+  top: 5px;
+  background: linear-gradient(172deg, #26fff2 0%, #326cff 100%);
+  transform: rotate(90deg);
+}
+
+.actors-list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.actors-list li img {
+  border-radius: 100px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.2s ease;
+}
+
+.actors-list li img:hover,
+.actors-list li img:focus {
+  box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
+}
+.popular-actors {
+  padding-bottom: 100px;
+}
+
+.actors-list li {
+  text-align: center;
+}
+
+.name {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 111%;
+  color: #fff;
 }
