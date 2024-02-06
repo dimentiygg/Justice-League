@@ -477,3 +477,84 @@ img {
   line-height: 111%;
   color: #fff;
 }
+
+.banner {
+  width: 1440px;
+  height: 341px;
+  box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(47deg, #0d1a73 29.09%, #000 70.41%);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.coming-banner {
+  position: absolute;
+  left: 940px;
+  top: 70px;
+}
+
+.coming-text {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 31%;
+  text-transform: capitalize;
+  color: #fff;
+  position: absolute;
+  left: 860px;
+  top: 250px;
+}
+
+.coming {
+  padding-bottom: 121px;
+}
+
+.register-banner {
+  border-radius: 20px;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+
+.filter {
+  position: relative;
+}
+
+.register-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 150px;
+  top: 75px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.register-button {
+  width: 141px;
+  height: 50px;
+  position: absolute;
+  top: 110px;
+  right: 270px;
+  border-radius: 50px;
+  border: transparent;
+  background: var(
+    --Brand-grd,
+    linear-gradient(317deg, #26fff2 13.2%, #326cff 71.54%)
+  );
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-button:hover,
+.register-button:focus {
+  transform: scale(1.1);
+}
