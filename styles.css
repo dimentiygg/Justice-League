@@ -354,7 +354,7 @@ img {
     (min-resolution: 2dppx),
     (min-device-pixel-ratio: 2) {
     .background-image {
-      /* background-image: url(./images/bc-mobile@2x.jpg); */
+      background-image: url(./images/bc-mobile@2x.jpg);
     }
   }
 }
@@ -679,6 +679,7 @@ img {
 }
 
 .register-banner {
+  width: 290px;
   border-radius: 20px;
   opacity: 0.7;
   margin: 0 auto;
@@ -686,11 +687,13 @@ img {
 
 .filter {
   position: relative;
-  margin-bottom: 121px;
+  padding-bottom: 90px;
+  width: 290px;
+  margin: 0 auto;
 }
 
 .filter img {
-  width: 300px;
+  width: 290px;
 }
 
 .register-text {
