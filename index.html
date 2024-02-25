@@ -19,11 +19,11 @@
   <body></body>
 </html>
 <header class="header">
-  <div class="flex-container">
-    <a class="header-logo" href="./index.html"
-      ><span class="m-logo">M</span> box</a
-    >
+  <div class="container">
     <nav class="header-nav">
+      <a class="header-logo" href="./index.html"
+        ><span class="m-logo">M</span> box</a
+      >
       <ul class="header-nav-list">
         <li class="header-list-item">
           <a class="header-list-link current" href="./index.html">Home </a>
@@ -37,31 +37,35 @@
         <li class="header-list-item">
           <a class="header-list-link" href="">Series</a>
         </li>
+        <li class="header-icon-item">
+          <button type="button" class="svg-button">
+            <svg class="icon-nav" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="header-icon-item">
+          <button type="button" class="svg-button">
+            <svg class="icon-nav" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-notification"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="header-icon-item">
+          <button type="button" class="svg-button">
+            <svg class="icon-nav" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-account"></use>
+            </svg>
+          </button>
+        </li>
       </ul>
+      <button type="button" class="burger-button">
+        <svg class="burger-svg" width="30" height="30">
+          <use href="./images/symbol-defs.svg#icon-burger"></use>
+        </svg>
+      </button>
     </nav>
-    <ul class="menu-icons">
-      <li class="header-icon-item">
-        <button type="button" class="svg-button">
-          <svg class="icon-nav" width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-search"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="header-icon-item">
-        <button type="button" class="svg-button">
-          <svg class="icon-nav" width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-notification"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="header-icon-item">
-        <button type="button" class="svg-button">
-          <svg class="icon-nav" width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-account"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
+    <ul class="menu-icons"></ul>
   </div>
 </header>
 <main>
@@ -69,7 +73,9 @@
     <div class="background-image">
       <div class="container">
         <div class="text">
-          <h1 class="hero-title">Zack Snyder's Justice League</h1>
+          <h1 class="hero-title">
+            Zack Snyder's <span class="hero-title-span">Justice League</span>
+          </h1>
           <ul class="hero-list">
             <li class="hero-list-item">2021</li>
             <li class="hero-list-item oval">18+</li>
@@ -81,8 +87,8 @@
           <p class="hero-text">
             Determined to ensure Superman's ultimate sacrifice was not in vain,
             Bruce Wayne aligns forces with Diana Prince with plans to recruit a
-            team of metahumans to protect the world from an approaching threat
-            of catastrophic proportions.
+            team of metahumans to protect the world from approaching threat of
+            catastrophic proportions.
           </p>
           <ul class="hero-button-list">
             <li class="hero-button-item">
@@ -95,7 +101,7 @@
             </li>
             <li class="hero-button-item">
               <button type="button" class="hero-button-bg">
-                More information
+                More info<span class="hero-button-span">rmation</span>
               </button>
             </li>
           </ul>
@@ -103,7 +109,7 @@
       </div>
     </div>
   </section>
-  <section class="tvShow">
+  <!-- <section class="tvShow">
     <div class="container">
       <h2 class="TvShow-title">
         Trending TV Shows<span class="arrow"> > </span>
@@ -260,9 +266,9 @@
         <button type="button" class="register-button">Register now</button>
       </div>
     </div>
-  </section>
+  </section> -->
 </main>
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="footer-container">
     <a class="footer-logo" href="./index.html"
       ><span class="m-logo-footer">M</span> box</a
@@ -289,4 +295,4 @@
       <li><a href="">Corporate Informations</a></li>
     </ul>
   </div>
-</footer>
+</footer>  -->

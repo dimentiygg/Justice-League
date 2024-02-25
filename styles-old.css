@@ -17,19 +17,17 @@ body {
 }
 
 .container {
-  height: 100%;
+  width: 1440px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.flex {
+.flex-container {
   display: flex;
-  height: 100%;
+  width: 1440px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  justify-content: space-around;
-  align-items: center;
 }
 
 h1,
@@ -55,58 +53,43 @@ img {
 }
 
 /* /Common styles */
-/* ------------------Mobile styles--------------------------------- */
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    width: 367px;
-    margin: 0 auto;
-  }
-  .flex {
-    width: 367px;
-    margin: 0 auto;
-  }
-}
 .header {
   background-color: #000000;
-  padding: 25px 0;
+  padding: 40px 0;
 }
 .header-logo {
   color: #fff;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 0;
   position: relative;
-  margin-left: 10px;
 }
 .m-logo {
   font-family: 'Lemon', serif;
   font-weight: 400;
   margin-right: 27px;
-  font-size: 35px;
 }
 .m-logo::after {
   display: block;
   position: absolute;
-  width: 60px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   border-radius: 14px;
   border: 4px solid #26fff2;
   content: '';
-  top: -27px;
-  left: -12px;
+  top: -35px;
+  left: -15px;
 }
 .header-nav {
-  line-height: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .header-nav-list {
-  display: none;
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 53px;
 }
 
@@ -147,7 +130,7 @@ img {
 }
 .menu-icons {
   display: flex;
-  gap: 15px;
+  gap: 45px;
 }
 .svg-button {
   line-height: 0;
@@ -162,16 +145,9 @@ img {
     fill: #0aeff7;
   }
 }
-
 .icon-nav {
   fill: white;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.burger-button {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  line-height: 0;
 }
 /* --------------------------/HEADER STYLES----------------------------- */
 
@@ -180,49 +156,32 @@ img {
   position: relative;
   border-bottom: 2px solid #2f2e2e;
 }
-
-.text {
-  width: 190px;
-  box-shadow: 40px -20px 40px 0 #000;
-  background-color: black;
-}
 .background-image {
-  background-image: url(./images/bc-mobile.jpg);
+  background-image: url(./images/bc.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  height: 380px;
+  height: 766px;
 }
-
-@media screen and (min-resolution: 192dpi),
-  (min-resolution: 2dppx),
-  (min-device-pixel-ratio: 2) {
-  .background-image {
-    background-image: url(./images/jervbneruipbviurr.jpg);
-  }
-}
-
 .hero-title {
-  width: 225px;
   color: #fff;
   font-family: 'Marcellus', serif;
-  font-size: 35px;
+  font-size: 80px;
   line-height: 1.15;
+  width: 532px;
   font-weight: 400;
-  margin-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 122px;
+  padding-bottom: 32px;
 }
-
 .hero-list {
   display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 40px;
 }
 
 .hero-list-item {
   color: #fff;
   font-family: 'Mulish', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   line-height: 1.6;
   position: relative;
@@ -230,13 +189,13 @@ img {
 .oval::after {
   display: block;
   position: absolute;
-  width: 40px;
-  height: 20px;
+  width: 60px;
+  height: 24px;
   border-radius: 50px;
   border: 1.5px solid #26fff2;
   content: '';
-  top: 2px;
-  left: -10px;
+  top: 1.5px;
+  left: -16px;
 }
 .star {
   color: #ffbd33;
@@ -244,90 +203,21 @@ img {
 }
 
 .hero-text {
-  width: 200px;
   color: #c2c2c2;
   font-family: 'Mulish', sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.55;
-}
-
-.hero-button {
-  width: 100px;
-  height: 40px;
-  border-radius: 50px;
-  border: transparent;
-  background: var(
-    --Brand-grd,
-    linear-gradient(317deg, #26fff2 13.2%, #326cff 71.54%)
-  );
-  color: white;
-  font-family: 'Mulish', sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1.25;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-button-bg {
-  width: 100px;
-  height: 40px;
-  border-radius: 50px;
-  border: transparent;
-  background: white;
-  color: black;
-  font-family: 'Mulish', sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1.25;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 507px;
+  padding-top: 32px;
 }
 
 .hero-button-list {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
-
-@media screen and (min-width: 560px) {
-  .hero-title {
-    font-size: 45px;
-    width: 290px;
-  }
-  .hero-list {
-    gap: 30px;
-  }
-  .hero-list-item {
-    font-size: 16px;
-  }
-  .oval::after {
-    width: 50px;
-    height: 25px;
-    top: 1px;
-    left: -12px;
-  }
-  .hero-text {
-    width: 300px;
-    font-size: 13px;
-  }
-  .hero-button {
-    width: 120px;
-    height: 45px;
-    font-size: 16px;
-  }
-  .hero-button-bg {
-    width: 120px;
-    height: 45px;
-    font-size: 16px;
-  }
-
-  .hero-button-list {
-    display: flex;
-    gap: 20px;
-  }
-}
-
 .hero-button-item {
-  padding-top: 15px;
+  padding-top: 35px;
 }
 .hero-button-item:hover,
 .hero-button-item:focus {
@@ -337,16 +227,40 @@ img {
   }
 }
 
-.hero-button-span {
-  display: none;
+.hero-button {
+  width: 141px;
+  height: 50px;
+  border-radius: 50px;
+  border: transparent;
+  background: var(
+    --Brand-grd,
+    linear-gradient(317deg, #26fff2 13.2%, #326cff 71.54%)
+  );
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .play {
   position: relative;
   top: 2px;
   left: -5px;
 }
-
+.hero-button-bg {
+  width: 195px;
+  height: 50px;
+  border-radius: 50px;
+  border: transparent;
+  background: white;
+  color: black;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* ----------------------------/HERO STYLES------------------------------------ */
 
 /* --------------------------------MAIN STYLES------------------------------ */
