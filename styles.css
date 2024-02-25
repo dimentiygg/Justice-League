@@ -61,7 +61,6 @@ img {
     width: 367px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
   }
   .flex {
     width: 367px;
@@ -73,6 +72,7 @@ img {
   padding: 25px 0;
 }
 .header-logo {
+  z-index: 999;
   color: #fff;
   text-align: center;
   font-family: 'Poppins', sans-serif;
