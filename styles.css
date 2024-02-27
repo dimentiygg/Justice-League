@@ -782,6 +782,7 @@ img {
   flex-direction: column;
   gap: 45px;
   text-align: start;
+  margin-bottom: 70px;
 }
 
 .footer-menu li a {
@@ -1130,4 +1131,280 @@ img {
   }
 
   /* --------------------------------/FOOTER-------------------------- */
+}
+/* ==================================/TABLET STYLES=========================== */
+
+/* ====================================== DEKSTOP STYLES=============================*/
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  /* -------------------------------------HEADER----------------------------- */
+
+  .menu-icons {
+    display: flex;
+    gap: 45px;
+  }
+
+  /* -------------------------------------/HEADER----------------------------- */
+
+  /* ------------------------------------MAIN---------------------------------- */
+
+  .background-image {
+    background-image: url(./images/bc.jpg);
+    height: 550px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2) {
+    .background-image {
+      background-image: url(./images/bc@2x.jpg);
+    }
+  }
+
+  .text {
+    width: 562px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+    width: 532px;
+    padding-top: 70px;
+    margin-bottom: 32px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    width: 507px;
+  }
+
+  .hero-button {
+    width: 141px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .hero-button-bg {
+    width: 195px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .TvShow-title {
+    font-size: 28px;
+  }
+
+  .TvShow-title::before {
+    width: 35px;
+    height: 8px;
+    left: -35px;
+    top: 5px;
+  }
+
+  .TvShow-list {
+    gap: 21px;
+  }
+
+  .Tv-Show-lidt-item {
+    display: inline;
+  }
+
+  .Tv-Show-lidt-item img {
+    width: 170px;
+    height: 260px;
+  }
+
+  .movies-title {
+    font-size: 28px;
+  }
+
+  .movies-title::before {
+    width: 35px;
+    height: 8px;
+    left: -35px;
+    top: 5px;
+  }
+
+  .movies-list {
+    gap: 21px;
+  }
+
+  .movies-list li {
+    display: inline;
+  }
+
+  .movies-list li img {
+    width: 170px;
+    height: 260px;
+  }
+
+  .movies-button {
+    width: 141px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .genres-title {
+    font-size: 28px;
+  }
+
+  .genres-title::before {
+    width: 35px;
+    height: 8px;
+    left: -35px;
+    top: 5px;
+  }
+
+  .genres-list {
+    gap: 27px;
+    width: 1128px;
+  }
+
+  .genres-list li {
+    display: inline;
+  }
+
+  .genres-list li img {
+    width: 260px;
+    height: 150px;
+  }
+
+  .actors-title {
+    font-size: 28px;
+  }
+
+  .actors-title::before {
+    width: 35px;
+    height: 8px;
+    left: -35px;
+    top: 5px;
+  }
+
+  .actors-list {
+    gap: 40px;
+  }
+
+  .actors-list li {
+    display: inline;
+  }
+
+  .actors-list li img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name {
+    width: auto;
+  }
+
+  .banner {
+    width: 1128px;
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.1);
+    background: linear-gradient(47deg, #0d1a73 29.09%, #000 70.41%);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    max-width: none;
+  }
+
+  .bunny-baner {
+    width: 564px;
+    height: 300px;
+  }
+
+  .coming-banner {
+    width: 260px;
+    left: 720px;
+    top: 50px;
+  }
+
+  .coming-text {
+    width: 460px;
+    font-size: 60px;
+    left: 635px;
+    top: 220px;
+  }
+
+  .coming {
+    padding-bottom: 101px;
+  }
+
+  .filter {
+    margin-bottom: 101px;
+    width: auto;
+  }
+
+  .register-text {
+    left: 50px;
+    top: 55px;
+    font-size: 64px;
+  }
+
+  .filter img {
+    width: 1128px;
+    max-width: none;
+  }
+
+  .register-button {
+    width: 141px;
+    height: 50px;
+    top: 110px;
+    right: 80px;
+    font-size: 16px;
+  }
+
+  .register-button:hover,
+  .register-button:focus {
+    transform: scale(1.1);
+  }
+
+  /* ------------------------------------/MAIN---------------------------------- */
+
+  /* ------------------------------------FOOTER------------------------------ */
+  .footer-container {
+    max-width: 1128px;
+    gap: 52px;
+    flex-direction: row;
+  }
+
+  .footer-logo {
+    margin-top: 102px;
+  }
+
+  .footer-menu {
+    gap: 40px;
+    margin-bottom: 70px;
+  }
+
+  .footer-menu li:first-child {
+    width: 200px;
+  }
+
+  /* -----------------------------------/FOOTER------------------------------- */
+}
+
+/* ====================================== /DEKSTOP STYLES=============================*/
+
+@media screen and (min-width: 1420px) {
+  .hero {
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+  .text {
+    height: 680px;
+  }
+
+  .background-image {
+    background-image: url(./images/cb.jpg);
+    height: 700px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2) {
+    .background-image {
+      background-image: url(./images/cb.jpg);
+    }
+  }
 }
