@@ -189,7 +189,7 @@ img {
   width: 100%;
   height: 2px;
   background-color: #2f2e2e;
-  z-index: 2; /* Устанавливаем z-index выше, чем у контейнера, чтобы граница была над ним */
+  z-index: 2;
 }
 
 .text {
@@ -801,4 +801,333 @@ img {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+/* -------------------------------/FOOTER---------------------------- */
+
+/*  ================================/MOBILE STYLES===================== */
+
+/* ===================================TABLET STYLES=========================== */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  /* -------------------------------HEADER-------------------------- */
+
+  .header-nav-list {
+    display: flex;
+    gap: 33px;
+  }
+
+  .header-list-item:nth-child(4) {
+    margin-right: 30px;
+  }
+
+  .burger-button {
+    display: none;
+  }
+  /* -------------------------------/HEADER-------------------------- */
+
+  /* --------------------------------MAIN--------------------------- */
+  .background-image {
+    background-image: url(./images/bc-tablet.jpg);
+    height: 500px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2) {
+    .background-image {
+      background-image: url(./images/bc-tablet@2x.jpg);
+    }
+  }
+
+  .text {
+    width: 380px;
+    height: 500px;
+  }
+
+  .hero-title {
+    width: 390px;
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .hero-list {
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+
+  .hero-list-item {
+    font-size: 16px;
+  }
+  .oval::after {
+    width: 60px;
+    height: 24px;
+    left: -16.5px;
+  }
+
+  .hero-text {
+    width: 380px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .hero-button {
+    width: 121px;
+    height: 45px;
+  }
+
+  .hero-button-bg {
+    width: 165px;
+    height: 45px;
+  }
+
+  .hero-button-span {
+    display: inline;
+  }
+
+  .hero-button-list {
+    gap: 25px;
+  }
+
+  .hero-button-item {
+    padding: 0;
+  }
+
+  .tvShow {
+    padding-top: 71px;
+  }
+
+  .TvShow-title {
+    margin: 0 0 40px 15px;
+    font-size: 26px;
+  }
+
+  .TvShow-title::before {
+    width: 30px;
+    height: 6px;
+    left: -25px;
+    top: 6px;
+  }
+
+  .TvShow-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 41px;
+    max-width: none;
+  }
+
+  .Tv-Show-lidt-item {
+    display: none;
+    width: auto;
+  }
+
+  .Tv-Show-lidt-item:nth-child(-n + 3) {
+    display: inline;
+  }
+
+  .Tv-Show-lidt-item:first-child {
+    margin: 0;
+  }
+
+  .Tv-Show-lidt-item img {
+    width: 206px;
+    height: 309px;
+  }
+
+  .movies-title {
+    font-size: 26px;
+    margin: 0 0 40px 15px;
+  }
+
+  .movies-title::before {
+    width: 30px;
+    height: 6px;
+    left: -25px;
+    top: 6px;
+  }
+
+  .movies-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 41px;
+    max-width: none;
+    margin-bottom: 55px;
+  }
+
+  .movies-list li {
+    display: none;
+  }
+
+  .movies-list li:nth-child(-n + 3) {
+    display: inline;
+  }
+
+  .movies-list li:first-child {
+    margin: 0;
+  }
+
+  .movies-button {
+    width: 121px;
+    height: 45px;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .genres-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+    justify-content: center;
+  }
+
+  .genres-list li {
+    display: none;
+  }
+
+  .genres-list li:nth-child(-n + 4) {
+    display: inline;
+  }
+
+  .genres-list li:first-child,
+  .genres-list li:first-child + li {
+    margin: 0;
+  }
+
+  .genres-list li img {
+    width: auto;
+  }
+
+  .genres-title {
+    font-size: 26px;
+    margin: 0 0 40px 15px;
+  }
+
+  .genres-title::before {
+    width: 30px;
+    height: 6px;
+    left: -25px;
+    top: 6px;
+  }
+
+  .actors-title {
+    font-size: 26px;
+    margin: 0 0 40px 15px;
+  }
+
+  .actors-title::before {
+    width: 30px;
+    height: 6px;
+    left: -25px;
+    top: 6px;
+  }
+
+  .actors-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 35px;
+    max-width: none;
+    margin-bottom: 55px;
+  }
+
+  .actors-list li img {
+    width: auto;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.2s ease;
+  }
+
+  .actors-list li:nth-child(-n + 3) {
+    display: inline;
+  }
+
+  .banner {
+    max-width: 738px;
+  }
+
+  .bunny-baner {
+    width: 369px;
+    height: 210px;
+  }
+
+  .coming-banner {
+    width: 200px;
+    left: 454px;
+    top: 40px;
+  }
+
+  .coming-text {
+    width: auto;
+    left: 396px;
+    top: 155px;
+    font-size: 42px;
+  }
+
+  .coming {
+    padding-bottom: 80px;
+  }
+
+  .register-banner {
+    width: 738px;
+  }
+
+  .filter {
+    width: 738px;
+  }
+
+  .filter img {
+    width: 738px;
+  }
+
+  .register-text {
+    top: 40px;
+    font-size: 42px;
+  }
+
+  .register-button {
+    width: 120px;
+    height: 40px;
+
+    top: 60px;
+    right: 40px;
+    font-size: 14px;
+  }
+
+  .register-button:hover,
+  .register-button:focus {
+    transform: scale(1.1);
+  }
+
+  /* --------------------------------/MAIN-------------------------- */
+
+  /* --------------------------------FOOTER-------------------------- */
+
+  .footer-container {
+    margin: 0 auto;
+    max-width: 768px;
+    align-items: start;
+  }
+
+  .footer-logo {
+    margin: 70px 0 0 12px;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .footer-menu li {
+    width: max-content;
+    gap: 25px;
+  }
+
+  .footer-menu li:first-child {
+    width: 125px;
+  }
+
+  /* --------------------------------/FOOTER-------------------------- */
 }
