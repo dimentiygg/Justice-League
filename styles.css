@@ -409,7 +409,26 @@ img {
   transform: rotate(90deg);
 }
 
+.splide__slide a img {
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.splide__arrow--next {
+  right: -0.1em;
+}
+
+.splide__arrow--prev {
+  left: -0.1em;
+}
+
+.splide{
+  max-width: 290px;
+  margin: 0 auto 68px  ;
+}
+
 .TvShow-list {
+  display: none;
   flex-wrap: wrap;
   gap: 15px;
   padding-bottom: 68px;
@@ -465,7 +484,7 @@ img {
 }
 
 .movies-list {
-  display: flex;
+  display: none;
   gap: 41px;
   margin-bottom: 35px;
 }
@@ -523,7 +542,7 @@ img {
 }
 
 .genres-list {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 27px;
   justify-content: center;
@@ -572,10 +591,17 @@ img {
   box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
 }
 
+.genres-slide-img{
+  width: 220px;
+}
+
 .popular-genres {
   padding-bottom: 70px;
 }
 
+#slider2{
+  margin-bottom: 0;
+}
 .actors-title {
   margin: 0 0 30px 10px;
   font-family: 'Mulish', sans-serif;
@@ -599,7 +625,7 @@ img {
 }
 
 .actors-list {
-  display: flex;
+  display: none;
   justify-content: center;
   gap: 25px;
 }
@@ -611,6 +637,15 @@ img {
   transition: box-shadow 0.2s ease;
 }
 
+#slider3 .splide__track .splide__list .splide__slide a img {
+  border-radius: 100px;
+}
+
+#slider3 .splide__track .splide__list .splide__slide p{
+  width: auto;
+  text-align: center;
+
+}
 .actors-list li img:hover,
 .actors-list li img:focus {
   box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
