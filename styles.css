@@ -422,9 +422,9 @@ img {
   left: -0.1em;
 }
 
-.splide{
+.splide {
   max-width: 290px;
-  margin: 0 auto 68px  ;
+  margin: 0 auto 68px;
 }
 
 .TvShow-list {
@@ -591,7 +591,7 @@ img {
   box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
 }
 
-.genres-slide-img{
+.genres-slide-img {
   width: 220px;
 }
 
@@ -599,7 +599,7 @@ img {
   padding-bottom: 70px;
 }
 
-#slider2{
+#slider2 {
   margin-bottom: 0;
 }
 .actors-title {
@@ -641,10 +641,9 @@ img {
   border-radius: 100px;
 }
 
-#slider3 .splide__track .splide__list .splide__slide p{
+#slider3 .splide__track .splide__list .splide__slide p {
   width: auto;
   text-align: center;
-
 }
 .actors-list li img:hover,
 .actors-list li img:focus {
@@ -845,6 +844,10 @@ img {
 
 /* ===================================TABLET STYLES=========================== */
 @media screen and (min-width: 768px) {
+  head {
+    width: 768px;
+  }
+
   .container {
     max-width: 768px;
     margin: 0 auto;
@@ -949,19 +952,23 @@ img {
   }
 
   .TvShow-list {
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     gap: 41px;
     max-width: none;
   }
 
-  .Tv-Show-lidt-item {
-    display: none;
-    width: auto;
+  .splide__arrow--next {
+    right: -1.8em;
   }
 
-  .Tv-Show-lidt-item:nth-child(-n + 3) {
-    display: inline;
+  .splide__arrow--prev {
+    left: -1.8em;
+  }
+
+  .splide {
+    max-width: 690px;
+    margin: 0 auto 68px;
   }
 
   .Tv-Show-lidt-item:first-child {
@@ -986,19 +993,11 @@ img {
   }
 
   .movies-list {
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     gap: 41px;
     max-width: none;
     margin-bottom: 55px;
-  }
-
-  .movies-list li {
-    display: none;
-  }
-
-  .movies-list li:nth-child(-n + 3) {
-    display: inline;
   }
 
   .movies-list li:first-child {
@@ -1013,18 +1012,10 @@ img {
   }
 
   .genres-list {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     gap: 27px;
     justify-content: center;
-  }
-
-  .genres-list li {
-    display: none;
-  }
-
-  .genres-list li:nth-child(-n + 4) {
-    display: inline;
   }
 
   .genres-list li:first-child,
@@ -1061,7 +1052,7 @@ img {
   }
 
   .actors-list {
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     gap: 35px;
     max-width: none;
@@ -1073,10 +1064,6 @@ img {
     border-radius: 100px;
     margin-bottom: 20px;
     transition: box-shadow 0.2s ease;
-  }
-
-  .actors-list li:nth-child(-n + 3) {
-    display: inline;
   }
 
   .banner {
@@ -1238,6 +1225,7 @@ img {
   }
 
   .TvShow-list {
+    display: flex;
     gap: 21px;
   }
 
@@ -1262,6 +1250,7 @@ img {
   }
 
   .movies-list {
+    display: flex;
     gap: 21px;
   }
 
@@ -1292,6 +1281,7 @@ img {
   }
 
   .genres-list {
+    display: flex;
     gap: 27px;
     width: 1128px;
   }
@@ -1317,6 +1307,7 @@ img {
   }
 
   .actors-list {
+    display: flex;
     gap: 40px;
   }
 
