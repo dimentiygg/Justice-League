@@ -158,6 +158,7 @@ img {
   padding: 0;
   line-height: 0;
 }
+
 .svg-button:hover,
 .svg-button:focus {
   .icon-nav {
@@ -383,6 +384,83 @@ img {
 /* ----------------------------/HERO STYLES------------------------------------ */
 
 /* --------------------------------MAIN STYLES------------------------------ */
+
+.film-modal {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 800px;
+  height: 570px;
+  position: relative;
+}
+
+.close-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  border: none;
+  line-height: 0;
+  background-color: transparent;
+}
+
+.film-about {
+  display: block;
+  width: 700px;
+  margin: 20px;
+  color: #c2c2c2;
+  font-family: 'Mulish', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.film-img {
+  display: block;
+  width: 260px;
+  height: 360px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.film-creater {
+  width: 290px;
+  color: #c2c2c2;
+  font-family: 'Mulish', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #c2c2c2;
+  font-family: 'Mulish', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.film-modal .hero-button {
+  margin-left: 330px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.film-modal .hero-button:hover,
+.film-modal .hero-button:focus {
+  margin-left: 330px;
+  transform: scale(1.1);
+}
+
 .tvShow {
   padding-top: 71px;
 }
@@ -425,6 +503,11 @@ img {
 .splide {
   max-width: 290px;
   margin: 0 auto 68px;
+}
+
+.new {
+  width: 170px;
+  height: 260px;
 }
 
 .TvShow-list {
@@ -508,13 +591,17 @@ img {
   margin: 0 auto;
 }
 
+.movies-list-more {
+  display: none;
+}
+
 .play {
   position: relative;
   top: 2px;
   left: -5px;
 }
 .movies-button {
-  display: block;
+  display: none;
   margin: 0 auto;
   width: 110px;
   height: 40px;
@@ -1263,10 +1350,43 @@ img {
     height: 260px;
   }
 
+  .movies-list-more {
+    display: flex;
+    gap: 21px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .visible {
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
+    height: 1px;
+    pointer-events: none;
+  }
+
+  .movies-list-more li a img {
+    border-radius: 20px;
+    width: 170px;
+    height: 260px;
+    transition: box-shadow 0.2s ease;
+  }
+
+  .movies-list-more li img:hover,
+  .movies-list-more li img:focus {
+    box-shadow: 0 0 20px 0 rgba(44, 176, 249, 0.5);
+  }
+
   .movies-button {
+    display: block;
     width: 141px;
     height: 50px;
     font-size: 16px;
+  }
+
+  .delete {
+    display: none;
   }
 
   .genres-title {

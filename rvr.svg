@@ -1,7 +1,0 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
-<symbol id="icon-burger" viewBox="0 0 32 32">
-<path fill="#fff" style="fill: var(--color1, #fff)" d="M30.4 6.4c0 0.884-0.716 1.6-1.6 1.6v0h-25.6c-0.884 0-1.6-0.716-1.6-1.6s0.716-1.6 1.6-1.6v0h25.6c0.884 0 1.6 0.716 1.6 1.6v0zM30.4 16c0 0.884-0.716 1.6-1.6 1.6v0h-25.6c-0.884 0-1.6-0.716-1.6-1.6s0.716-1.6 1.6-1.6v0h25.6c0.884 0 1.6 0.716 1.6 1.6v0zM28.8 27.2c0.884 0 1.6-0.716 1.6-1.6s-0.716-1.6-1.6-1.6v0h-25.6c-0.884 0-1.6 0.716-1.6 1.6s0.716 1.6 1.6 1.6v0h25.6z"></path>
-</symbol>
-</defs>
-</svg>
