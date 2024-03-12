@@ -386,10 +386,11 @@ img {
 /* --------------------------------MAIN STYLES------------------------------ */
 
 .film-modal {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
-  width: 800px;
-  height: 570px;
+  width: 290px;
+  height: 500px;
   position: relative;
 }
 
@@ -407,58 +408,55 @@ img {
 
 .film-about {
   display: block;
-  width: 700px;
-  margin: 20px;
+  width: 280px;
   color: #c2c2c2;
   font-family: 'Mulish', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.55;
 }
 
+.box {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .film-img {
-  display: block;
-  width: 260px;
-  height: 360px;
-  margin-left: 20px;
-  margin-top: 10px;
+  height: 200px;
+  margin: 4px 0 0 4px;
   border-radius: 10px;
 }
 
 .film-creater {
-  width: 290px;
+  width: 140px;
   color: #c2c2c2;
   font-family: 'Mulish', sans-serif;
-  font-size: 19px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 .wrapper {
+  margin-top: 30px;
   display: flex;
-  gap: 30px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.text-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.film-actors {
+  margin-bottom: 10px;
   color: #c2c2c2;
   font-family: 'Mulish', sans-serif;
-  font-size: 19px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.55;
 }
 
-.film-modal .hero-button {
-  margin-left: 330px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.film-modal .hero-button:hover,
-.film-modal .hero-button:focus {
-  margin-left: 330px;
-  transform: scale(1.1);
+.modal {
+  height: 30px;
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: -12px;
 }
 
 .tvShow {
@@ -1022,6 +1020,54 @@ img {
     padding: 0;
   }
 
+  .film-modal {
+    width: 730px;
+    height: 600px;
+  }
+
+  .film-about {
+    width: 700px;
+    margin: 20px;
+    font-size: 15px;
+  }
+
+  .film-img {
+    width: 260px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .film-creater {
+    width: 290px;
+    font-size: 21px;
+    line-height: 2.1;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 30px;
+    margin: 0 0 10px 0;
+  }
+
+  .box {
+    width: auto;
+    margin: 0 0 0 20px;
+  }
+
+  .film-actors {
+    font-size: 19px;
+    margin: 0 0 15px 0;
+  }
+
+  .modal {
+    margin-right: 140px;
+  }
+
+  .film-about {
+    margin: 0;
+  }
+
   .tvShow {
     padding-top: 71px;
   }
@@ -1259,6 +1305,68 @@ img {
   /* -------------------------------------/HEADER----------------------------- */
 
   /* ------------------------------------MAIN---------------------------------- */
+
+  .film-modal {
+    display: block;
+    width: 800px;
+    height: 570px;
+  }
+
+  .film-about {
+    width: 700px;
+    margin: 20px;
+    font-size: 15px;
+  }
+
+  .film-img {
+    width: 260px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .film-creater {
+    width: 290px;
+    font-size: 19px;
+    line-height: 2;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+  }
+
+  .film-actors {
+    margin-bottom: 10px;
+    color: #c2c2c2;
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #c2c2c2;
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .film-modal .hero-button {
+    margin-left: 330px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .film-modal .hero-button:hover,
+  .film-modal .hero-button:focus {
+    margin-left: 330px;
+    transform: scale(1.1);
+  }
 
   .background-image {
     background-image: url(./images/bc.jpg);
