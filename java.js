@@ -113,7 +113,7 @@ splideModal[1].addEventListener('click', event => {
   if (event.target.nodeName === 'IMG') {
     const instance = basicLightbox.create(
       `
-     <div class="film-modal-mobile">
+     <div class="film-modal">
 <button type="button" class="close-button">
             <svg class="svg-button" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-close"></use>
